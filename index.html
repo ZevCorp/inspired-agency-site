@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inspired | Intelligence for Colombia</title>
+    <meta
+      name="description"
+      content="Inspired toma una empresa referente exitosa en Europa o Estados Unidos, detecta la brecha frente a Colombia y diseña la ruta para cerrar esa distancia."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-a" aria-hidden="true"></div>
+      <div class="ambient ambient-b" aria-hidden="true"></div>
+      <div class="grid-noise" aria-hidden="true"></div>
+      <div class="halo halo-a" aria-hidden="true"></div>
+      <div class="halo halo-b" aria-hidden="true"></div>
+
+      <aside class="journey-rail" aria-label="Journey navigation">
+        <button class="journey-node active" type="button" data-target="#top">
+          <span class="node-line"></span>
+          <span class="node-label">Entrada</span>
+        </button>
+        <button class="journey-node" type="button" data-target="#intelligence">
+          <span class="node-line"></span>
+          <span class="node-label">Prompt</span>
+        </button>
+        <button class="journey-node" type="button" data-target="#territory">
+          <span class="node-line"></span>
+          <span class="node-label">Mapa</span>
+        </button>
+        <button class="journey-node" type="button" data-target="#execution">
+          <span class="node-line"></span>
+          <span class="node-label">Equipo</span>
+        </button>
+      </aside>
+
+      <header class="site-header">
+        <a class="brand" href="#top">
+          <span class="brand-mark"></span>
+          Inspired
+        </a>
+        <nav class="main-nav">
+          <a href="#intelligence">Intelligence</a>
+          <a href="#territory">Mapa</a>
+          <a href="#execution">Equipo</a>
+        </nav>
+        <button class="header-cta" type="button" data-target="#intelligence">
+          Activar research
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero-slide screen-slide" data-section="Entrada">
+          <div class="slide-shell hero-shell">
+            <div class="hero-copy">
+              <p class="eyebrow">Inspired / Venture Translation System</p>
+              <h1>
+                Tu idea ya
+                <span>funcionó en otro mercado.</span>
+              </h1>
+              <p class="hero-text" id="hero-summary">
+                Encontramos una empresa casi gemela en Europa o Estados Unidos,
+                medimos la brecha con Colombia y diseñamos la ruta exacta para
+                cerrar esa distancia con foco, territorio y ejecución real.
+              </p>
+              <div class="hero-actions">
+                <button class="primary-button" type="button" data-target="#intelligence">
+                  Empezar con mi idea
+                </button>
+                <button class="secondary-button" type="button" data-target="#territory">
+                  Ver el mapa
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-system" aria-hidden="true">
+              <div class="system-core">
+                <div class="system-ring ring-one"></div>
+                <div class="system-ring ring-two"></div>
+                <div class="system-ring ring-three"></div>
+                <div class="system-heart">
+                  <span>Inspired Core</span>
+                  <strong>Benchmark to Colombia</strong>
+                </div>
+                <div class="system-tag tag-us">USA</div>
+                <div class="system-tag tag-eu">EU</div>
+                <div class="system-tag tag-col">COL</div>
+              </div>
+              <div class="signal-list">
+                <article class="signal-card">
+                  <span>Research</span>
+                  <strong>1 empresa referente</strong>
+                </article>
+                <article class="signal-card">
+                  <span>Gap</span>
+                  <strong>Oportunidades accionables</strong>
+                </article>
+                <article class="signal-card">
+                  <span>Execution</span>
+                  <strong>Equipo + geografía</strong>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="intelligence" class="screen-slide" data-section="Prompt">
+          <div class="slide-shell intelligence-shell">
+            <div class="slide-intro reveal">
+              <p class="eyebrow">Scene 02 / Intelligence Prompt</p>
+              <h2>El centro de todo es el prompt del cliente.</h2>
+              <p class="slide-lead">
+                Aquí empieza la investigación. Una sola idea entra al sistema y de
+                ahí salen el benchmark profundo, la traducción al mercado colombiano
+                y la asignación exacta del equipo.
+              </p>
+            </div>
+
+            <div class="intelligence-grid">
+              <div class="prompt-panel reveal">
+                <div class="prompt-panel-top">
+                  <div>
+                    <span class="panel-chip">AI Research Agent</span>
+                    <p class="prompt-kicker">Una sola idea. Una sola empresa referente. Una ruta para Colombia.</p>
+                  </div>
+                  <button class="ghost-button" type="button" id="open-ai-settings">
+                    Conectar OpenAI
+                  </button>
+                </div>
+                <label class="sr-only" for="business-idea">
+                  Describe tu negocio, emprendimiento o idea
+                </label>
+                <textarea
+                  id="business-idea"
+                  rows="8"
+                  placeholder="Describe tu idea, negocio o emprendimiento. Qué vendes, para quién, cómo se ve la experiencia ideal y qué ambición quieres replicar en Colombia."
+                ></textarea>
+                <div class="prompt-minimal-bar">
+                  <div class="prompt-hint">
+                    <span class="status-dot"></span>
+                    <strong id="agent-mode-label">Modo simulación premium</strong>
+                  </div>
+                  <button class="primary-button launch-button" type="button">
+                    Activar research
+                  </button>
+                </div>
+                <p class="live-status">
+                  <strong id="status-text">Escuchando la idea y preparando el benchmark ideal.</strong>
+                </p>
+              </div>
+
+              <div class="result-panel reveal" id="report-focus">
+                <div class="result-stack">
+                  <article class="result-card hero-card">
+                    <span class="result-label">Benchmark central</span>
+                    <h3 id="benchmark-heading">Una empresa principal. Cero distracción.</h3>
+                    <p id="benchmark-summary">
+                      Inspired elige un solo caso de estudio profundo para modelar
+                      oferta, narrativa, expansión y operación en Colombia.
+                    </p>
+                    <p class="result-rationale" id="agent-rationale">
+                      El agente elegirá una empresa real que se parezca de forma creíble a la idea del cliente. El análisis posterior seguirá siendo una simulación de alta calidad para prototipo.
+                    </p>
+                  </article>
+
+                  <article class="result-card">
+                    <span class="result-label">Cómo piensa el sistema</span>
+                    <div class="logic-grid">
+                      <div>
+                        <p class="logic-title" id="input-title">Prompt decoded</p>
+                        <p class="logic-copy" id="input-copy">
+                          El sistema organiza la categoría, madurez y ángulo de
+                          oportunidad del negocio.
+                        </p>
+                      </div>
+                      <div>
+                        <p class="logic-title" id="benchmark-title">Case study selection</p>
+                        <p class="logic-copy" id="benchmark-copy">
+                          Se abre un expediente de investigación profundo sobre una
+                          sola empresa referente.
+                        </p>
+                      </div>
+                      <div>
+                        <p class="logic-title" id="translation-title">Gap to Colombia plan</p>
+                        <p class="logic-copy" id="translation-copy">
+                          La distancia entre ambos modelos se convierte en un plan
+                          comercial, territorial y operativo.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="result-card comparison-card">
+                    <div class="comparison-column">
+                      <span class="result-label" id="client-label">Tu empresa hoy</span>
+                      <ul id="client-points">
+                        <li>Idea valiosa todavía sin benchmark dominante.</li>
+                        <li>Narrativa de categoría aún sin máxima claridad.</li>
+                        <li>Expansión potencial sin priorización geográfica.</li>
+                      </ul>
+                    </div>
+                    <div class="comparison-beam">Gap</div>
+                    <div class="comparison-column">
+                      <span class="result-label" id="reference-label">Empresa referente</span>
+                      <ul id="reference-points">
+                        <li>Modelo probado en un mercado más sofisticado.</li>
+                        <li>Oferta, pricing y percepción muy refinados.</li>
+                        <li>Expansión con reglas replicables.</li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="territory" class="screen-slide" data-section="Mapa">
+          <div class="slide-shell territory-shell">
+            <div class="slide-intro reveal">
+              <p class="eyebrow">Scene 03 / Territory Design</p>
+              <h2>El mapa muestra dónde vive la oportunidad en Colombia.</h2>
+              <p class="slide-lead">
+                Después del benchmark, la IA marca los puntos geográficos donde la
+                ejecución tiene más sentido por densidad de demanda, adopción,
+                capacidad adquisitiva y facilidad operativa.
+              </p>
+            </div>
+
+            <div class="territory-grid reveal">
+              <div class="territory-map">
+                <div class="map-orbit map-orbit-a"></div>
+                <div class="map-orbit map-orbit-b"></div>
+                <div class="map-frame">
+                  <div class="map-grid"></div>
+                  <svg
+                    class="colombia-svg"
+                    id="colombia-map-svg"
+                    viewBox="0 0 540 760"
+                    role="img"
+                    aria-label="Mapa real de Colombia con puntos de oportunidad"
+                  >
+                    <defs>
+                      <linearGradient id="colombiaGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f3b9ff" />
+                        <stop offset="100%" stop-color="#6d19ff" />
+                      </linearGradient>
+                    </defs>
+                    <g id="colombia-map-layer"></g>
+                  </svg>
+
+                  <button class="map-point active" type="button" data-city="Bogotá" data-lon="-74.0721" data-lat="4.711" data-role="Capital de escala" data-copy="Alto volumen, sofisticación de demanda y capacidad de validar una propuesta premium.">
+                    <span></span>
+                    Bogotá
+                  </button>
+                  <button class="map-point" type="button" data-city="Medellín" data-lon="-75.5636" data-lat="6.2518" data-role="Hub de adopción" data-copy="Velocidad para probar marcas aspiracionales y operación flexible con alto efecto demostración.">
+                    <span></span>
+                    Medellín
+                  </button>
+                  <button class="map-point" type="button" data-city="Cali" data-lon="-76.532" data-lat="3.4516" data-role="Mercado de consolidación" data-copy="Buen espacio para adaptar el modelo y construir recordación con densidad urbana fuerte.">
+                    <span></span>
+                    Cali
+                  </button>
+                  <button class="map-point" type="button" data-city="Barranquilla" data-lon="-74.7964" data-lat="10.9878" data-role="Puerta Caribe" data-copy="Acceso a economía regional dinámica y una expansión visible hacia el Caribe.">
+                    <span></span>
+                    Barranquilla
+                  </button>
+                  <button class="map-point" type="button" data-city="Bucaramanga" data-lon="-73.1198" data-lat="7.1254" data-role="Nodo de eficiencia" data-copy="Plaza ideal para validar márgenes y repetición en un entorno competitivo controlado.">
+                    <span></span>
+                    Bucaramanga
+                  </button>
+                </div>
+              </div>
+
+              <aside class="map-panel reveal">
+                <span class="panel-chip">Geo Signal</span>
+                <h3 id="map-city">Bogotá</h3>
+                <p id="map-role" class="map-role">Capital de escala</p>
+                <p id="map-copy" class="map-description">
+                  Alto volumen, sofisticación de demanda y capacidad de validar una
+                  propuesta premium.
+                </p>
+
+                <div class="map-stats">
+                  <div>
+                    <span>Demand fit</span>
+                    <strong>94%</strong>
+                  </div>
+                  <div>
+                    <span>Execution ease</span>
+                    <strong>81%</strong>
+                  </div>
+                  <div>
+                    <span>Growth leverage</span>
+                    <strong>89%</strong>
+                  </div>
+                </div>
+
+                <button class="primary-button map-cta" type="button" data-target="#execution">
+                  Hacerlo por $2000
+                </button>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section id="execution" class="screen-slide" data-section="Equipo">
+          <div class="slide-shell execution-shell">
+            <div class="execution-top reveal">
+              <div class="slide-intro">
+                <p class="eyebrow">Scene 04 / Execution Unit</p>
+                <h2>El equipo real ejecuta el plan específico de tu idea.</h2>
+                <p class="slide-lead">
+                  Cuando el cliente hace clic en <strong>Hacerlo por $2000</strong>,
+                  Inspired asigna la implementación completa al equipo
+                  integrantes con un rol definido por el benchmark y por el mapa.
+                </p>
+              </div>
+              <div class="execution-offer">
+                <span class="offer-label">Implementation Trigger</span>
+                <strong>$2000</strong>
+                <p>Research, roadmap, adaptación y despliegue guiado por equipo.</p>
+              </div>
+            </div>
+
+            <div class="team-grid">
+              <article class="team-card reveal">
+                <img class="team-photo" src="./Miguel%20santa%20maria%20Subgerente.jpeg" alt="Miguel Santa Maria" />
+                <h3>Miguel Santa Maria</h3>
+                <p class="role">Subgerente</p>
+                <p data-team-copy="miguel">Convierte la visión general del benchmark en prioridades ejecutivas, control de avance y decisiones clave para que el plan aterrice sin fricción.</p>
+              </article>
+              <article class="team-card reveal">
+                <img class="team-photo" src="./Isabela%20Arias%20Salazar%20Directora%20de%20Marketing.jpeg" alt="Isabela Arias Salazar" />
+                <h3>Isabela Arias Salazar</h3>
+                <p class="role">Directora de Marketing</p>
+                <p data-team-copy="isabela">Convierte los hallazgos del benchmark en estrategia de adquisición, posicionamiento y demanda para el mercado colombiano.</p>
+              </article>
+              <article class="team-card reveal">
+                <img class="team-photo" src="./Sof%C3%ADa%20L%C3%B3pez%20Aristizabal%20Estratega%20de%20Branding%20Visual.jpeg" alt="Sofía López Aristizabal" />
+                <h3>Sofía López Aristizabal</h3>
+                <p class="role">Estratega de Branding Visual</p>
+                <p data-team-copy="sofia">Aterriza la percepción visual del benchmark y la adapta para que la marca parezca líder desde su entrada en Colombia.</p>
+              </article>
+              <article class="team-card reveal">
+                <img class="team-photo" src="./Juan%20Esteban%20P%C3%A9rez%20Dise%C3%B1ador%20de%20Identidad%20Visual.jpeg" alt="Juan Esteban Pérez" />
+                <h3>Juan Esteban Pérez</h3>
+                <p class="role">Diseñador de Identidad Visual</p>
+                <p data-team-copy="juan">Construye la identidad visible del plan para que cada punto de contacto refleje el estándar de la empresa referente.</p>
+              </article>
+              <article class="team-card reveal">
+                <img class="team-photo" src="./Mar%C3%ADa%20Paulina%20Mej%C3%ADa%20Community%20Manager.jpeg" alt="María Paulina Mejía" />
+                <h3>María Paulina Mejía</h3>
+                <p class="role">Community Manager</p>
+                <p data-team-copy="maria">Traduce la estrategia en conversación, comunidad y activación digital para validar rápido la respuesta del mercado.</p>
+              </article>
+              <article class="team-card reveal">
+                <img class="team-photo" src="./Daniel%20Hern%C3%A1ndez.jpeg" alt="Daniel Hernández" />
+                <h3>Daniel Hernández</h3>
+                <p class="role">Research Strategist</p>
+                <p data-team-copy="daniel">Profundiza en la empresa referente, identifica brechas y convierte la similitud detectada en una ruta estratégica clara.</p>
+              </article>
+              <article class="team-card reveal">
+                <img class="team-photo" src="./Nicol%C3%A1s%20Uriza%20Casta%C3%B1o.jpeg" alt="Nicolás Uriza Castaño" />
+                <h3>Nicolás Uriza Castaño</h3>
+                <p class="role">Operations Architect</p>
+                <p data-team-copy="nicolas">Secuencia la implementación completa en responsables, fases y entregables para que el plan sea verdaderamente ejecutable.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="settings-modal" id="ai-settings-modal" hidden>
+      <div class="settings-backdrop" data-close-settings></div>
+      <div class="settings-card">
+        <button class="settings-close" type="button" data-close-settings aria-label="Cerrar">
+          ×
+        </button>
+        <p class="eyebrow">Prototype Connection</p>
+        <h2>Conecta OpenAI para elegir una empresa real automáticamente.</h2>
+        <p class="settings-copy">
+          Esta clave se guarda solo en tu navegador para este prototipo. Si no la conectas,
+          Inspired sigue funcionando con un benchmark simulado de alta calidad.
+        </p>
+        <label class="settings-label" for="openai-api-key">OpenAI API Key</label>
+        <input
+          id="openai-api-key"
+          type="password"
+          placeholder="sk-..."
+          autocomplete="off"
+        />
+        <div class="settings-actions">
+          <button class="primary-button" type="button" id="save-openai-key">
+            Guardar clave
+          </button>
+          <button class="secondary-button" type="button" id="clear-openai-key">
+            Quitar clave
+          </button>
+        </div>
+        <p class="settings-footnote" id="settings-status">
+          Sin clave guardada. El flujo usará modo simulación premium.
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+    <script src="./assets/colombia-depto.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

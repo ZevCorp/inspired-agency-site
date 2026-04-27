@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: inspired-site
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
