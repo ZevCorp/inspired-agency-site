@@ -1011,10 +1011,36 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
+  .hero-shell {
+    gap: 24px;
+  }
+
+  .hero-copy,
+  .slide-intro {
+    max-width: 100%;
+  }
+
+  .prompt-panel,
+  .result-panel {
+    width: 100%;
+  }
+
+  .prompt-panel {
+    min-height: auto;
+  }
+
   .hero-system,
   .territory-map,
   .map-frame {
     min-height: 520px;
+  }
+
+  .execution-top {
+    align-items: stretch;
+  }
+
+  .execution-offer {
+    max-width: 360px;
   }
 
   .team-grid {
@@ -1025,11 +1051,17 @@ textarea:focus {
 @media (max-width: 860px) {
   .site-header {
     padding: 18px 18px;
+    gap: 12px;
   }
 
   .main-nav,
   .journey-rail {
     display: none;
+  }
+
+  .header-cta {
+    padding: 12px 16px;
+    font-size: 0.9rem;
   }
 
   .screen-slide {
@@ -1044,15 +1076,49 @@ textarea:focus {
 
   .prompt-panel {
     min-height: auto;
-    padding: 24px;
+    padding: 22px 18px 20px;
   }
 
   .prompt-panel-top {
     flex-direction: column;
   }
 
+  .ghost-button,
+  .primary-button,
+  .secondary-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .prompt-minimal-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .prompt-hint {
+    justify-content: center;
+    text-align: center;
+  }
+
+  textarea {
+    min-height: 240px;
+    padding: 24px 22px;
+    border-radius: 26px;
+    font-size: 1rem;
+  }
+
   .hero-copy h1 {
     font-size: clamp(3rem, 14vw, 4.8rem);
+  }
+
+  .hero-text,
+  .slide-lead,
+  .logic-copy,
+  .team-card p,
+  .result-card p,
+  .map-description,
+  .execution-offer p {
+    font-size: 0.98rem;
   }
 
   .slide-intro h2 {
@@ -1065,6 +1131,10 @@ textarea:focus {
     min-height: 420px;
   }
 
+  .signal-list {
+    margin-top: 18px;
+  }
+
   .comparison-card {
     grid-template-columns: 1fr;
   }
@@ -1073,8 +1143,37 @@ textarea:focus {
     min-height: 52px;
   }
 
+  .territory-grid {
+    gap: 18px;
+  }
+
+  .map-panel {
+    padding: 20px;
+  }
+
+  .map-panel h3 {
+    font-size: 2rem;
+  }
+
+  .map-stats div {
+    padding: 14px 16px;
+  }
+
+  .execution-offer {
+    max-width: none;
+  }
+
   .team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .team-photo {
+    height: 220px;
   }
 
   .map-point {
@@ -1084,5 +1183,85 @@ textarea:focus {
   .settings-card {
     margin-top: 4vh;
     padding: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    padding: 14px;
+  }
+
+  .brand {
+    font-size: 0.84rem;
+  }
+
+  .header-cta {
+    padding: 10px 14px;
+    font-size: 0.82rem;
+  }
+
+  .screen-slide {
+    padding: 86px 10px 18px;
+  }
+
+  .slide-shell {
+    padding: 20px 14px;
+    border-radius: 24px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.5rem, 13vw, 3.7rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .system-core {
+    width: min(100%, 300px);
+  }
+
+  .system-tag {
+    padding: 8px 10px;
+    font-size: 0.68rem;
+  }
+
+  .hero-system,
+  .territory-map,
+  .map-frame {
+    min-height: 360px;
+  }
+
+  .colombia-svg {
+    inset: 34px 0 0;
+    height: calc(100% - 48px);
+  }
+
+  .map-point {
+    font-size: 0.72rem;
+    gap: 6px;
+  }
+
+  .map-point span {
+    width: 10px;
+    height: 10px;
+  }
+
+  .map-panel h3 {
+    font-size: 1.7rem;
+  }
+
+  .execution-offer strong {
+    font-size: 2.3rem;
+  }
+
+  .team-photo {
+    height: 180px;
+  }
+
+  .settings-card {
+    width: calc(100vw - 20px);
+    padding: 20px 16px;
   }
 }
